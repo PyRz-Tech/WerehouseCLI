@@ -25,6 +25,9 @@ warehouse add
 # List all products
 warehouse list
 
+# Edit products
+warehouse edit
+
 # Search products
 warehouse search
 
