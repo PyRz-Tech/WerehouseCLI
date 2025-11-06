@@ -14,7 +14,6 @@ class Product(BaseModel):
 
     model_config = ConfigDict(
         arbitrary_types_allowed=True,
-        json_encoders={ProductId: lambda v: v.id}
     )
 
     @field_validator('quantity')

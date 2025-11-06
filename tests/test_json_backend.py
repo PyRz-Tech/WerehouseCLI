@@ -25,12 +25,12 @@ class TestJSONWarehouse(unittest.TestCase):
 
     def test_add_product_validation_error(self):
         success, msg = self.warehouse.add({
-            "name": "soda", "price": -100, "quantity": 0
+            "name": "ab", "price": -100, "quantity": 0
         })
         self.assertFalse(success)
-        self.assertIn("name", msg)
-        self.assertIn("price", msg)
-        self.assertIn("quantity", msg)
+        self.assertIn("at least 3 character", msg)
+        self.assertIn("positive number", msg)     
+        self.assertIn("not negative number", msg)
 
     def test_edit_existing_item(self):
         self.warehouse.add({"name": "phone", "price": 2000000, "quantity": 1})
