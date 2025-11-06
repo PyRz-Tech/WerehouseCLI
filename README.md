@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="demo.gif" alt="Warehouse CLI Demo" width="800"/>
+  <img src="demo.gif" alt="Warehouse CLI Demo" width="500"/>
 </p>
 
 <h1 align="center">Warehouse CLI</h1>
@@ -22,7 +22,7 @@
 - Factory Pattern + `@register` plugin system
 - `pydantic` + `Protocol` for type-safe validation
 - Beautiful UX with `rich` + `click`
-- Full test coverage with `pytest`
+- test coverage with `unittest`
 
 ## Installation
 ```bash
