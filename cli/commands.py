@@ -173,3 +173,7 @@ class WarehouseCLI:
             console.print(f"❌ Deleted product with ID {item_id}")
         else:
             console.print(f"🟡 Product ID {item_id} not found")
+
+
+def cli():
+    WarehouseCLI().run()
